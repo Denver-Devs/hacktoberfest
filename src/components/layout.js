@@ -12,29 +12,29 @@ import PropTypes from "prop-types"
 import "./layout.css"
 
 const Container = styled.div`
-  margin: 100px auto;
-  max-width: 780px;
   background: HSLA(226, 46%, 14%, 1);
-  position: relative;
   border-radius: 10px;
+  margin: 15px;
+  max-width: 780px;
+  position: relative;
+
+  @media (min-width: 768px) {
+    margin: 100px auto;
+  }
 
   &::before {
-    top: 0;
+    animation: 8s flicker infinite;
     border-radius: 10px;
-    position: absolute;
     content: "";
     display: block;
-    width: 100%;
     height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
     z-index: -1;
-    box-shadow: inset 0 0 50px #fff, /* inner white */ inset 20px 0 80px #f0f,
-      /* inner left magenta short */ inset -20px 0 80px #0ff,
-      /* inner right cyan short */ inset 20px 0 300px #f0f,
-      /* inner left magenta broad */ inset -20px 0 300px #0ff,
-      /* inner right cyan broad */ 0 0 50px #fff,
-      /* outer white */ -10px 0 80px #f0f,
-      /* outer left magenta */ 10px 0 80px #0ff;
-    animation: 8s flicker infinite;
+    box-shadow: inset 0 0 50px #fff, inset 20px 0 80px #f0f,
+      inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff,
+      0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
   }
 
   @keyframes flicker {
@@ -58,13 +58,16 @@ const Container = styled.div`
 
   main {
     background: HSLA(226, 46%, 14%, 1);
-    width: 100%;
-    height: 100%;
-    padding: 40px;
-    background: HSLA(226, 46%, 14%, 1);
     border-radius: 10px;
-    z-index: 10;
+    height: 100%;
+    padding: 20px;
     position: relative;
+    width: 100%;
+    z-index: 10;
+
+    @media (min-width: 768px) {
+      padding: 40px;
+    }
   }
 `
 

@@ -224,6 +224,11 @@ body {
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
+p::selection,
+h3::selection {
+  background: #ea38a5;
+  color: black;
+}
 img {
   max-width: 100%;
   margin-left: 0;
