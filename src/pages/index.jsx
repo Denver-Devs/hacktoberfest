@@ -133,10 +133,15 @@ const RegistrationForm = styled.div`
     }
   }
 
-  div input:focus + label {
+  div input:focus + label,
+  div input:visited + label {
     transform: translateY(-24px);
     color: HSLA(226, 46%, 45%, 1);
     transition: all 133ms ease-in-out;
+  }
+
+  input:not(:placeholder-shown) {
+    border-color: hsl(0, 76%, 50%);
   }
 
   label {
@@ -150,17 +155,27 @@ const RegistrationForm = styled.div`
     transition: all 133ms ease-in-out;
     font-size: 16px;
   }
+
+  input:valid {
+    border-color: hsl(120, 76%, 50%);
+  }
   input[type="text"],
   input[type="email"] {
-    /* background: HSLA(226, 46%, 10%, 1); */
     color: HSLA(226, 46%, 65%, 1);
     padding: 2px 10px;
-    /* margin-left: 10px; */
     border: none;
     background: none;
     width: 70%;
     outline: none;
     font-size: 18px;
+
+    &::placeholder {
+      color: rgba(0, 0, 0, 0);
+    }
+    &:not(:placeholder-shown) + label {
+      transform: translateY(-24px);
+      color: HSLA(226, 46%, 45%, 1);
+    }
   }
 
   input[type="submit"] {
@@ -191,7 +206,9 @@ const IndexPage = () => (
       <div className="masthead-info">
         <div>October 10th, 6pm - 9pm</div>
         <div>
-          <a href="google.com">Flatiron school</a>
+          <a href="https://goo.gl/maps/9S4H3Rt7Q8c4yJoq9" target="_blank">
+            Flatiron school
+          </a>
         </div>
       </div>
       <AddToCalendar
@@ -205,22 +222,27 @@ const IndexPage = () => (
       <form
         name="contact"
         method="post"
-        action="/success"
+        action="/registered"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
       >
         <input type="hidden" name="bot-field" />
         <input type="hidden" name="form-name" value="contact" />
         <div>
-          <input type="text" name="name" id="name" />
+          <input type="text" name="name" id="name" placeholder="//" />
           <label htmlFor="name">Name</label>
         </div>
         <div>
-          <input type="text" name="email" id="email" />
+          <input type="text" name="email" id="email" placeholder="//" />
           <label htmlFor="email">Email</label>
         </div>
         <div>
-          <input type="text" name="slackHandle" id="slackHandle" />
+          <input
+            type="text"
+            name="slackHandle"
+            id="slackHandle"
+            placeholder="//"
+          />
           <label htmlFor="slackHandle">Slack Handle</label>
         </div>
         <input type="submit" value="Register" className="special" />
