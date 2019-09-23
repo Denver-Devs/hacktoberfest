@@ -63,14 +63,11 @@ const IndexPage = () => (
 
       <h3>&#x2F;&#x2F; Other Info</h3>
       <p>
-        <strong>Will there be food / drinks?</strong> For now, no. Denver Devs
-        doesn't make any money or usually have sponsors - so providing food and
-        drinks out of pocket can get a bit rough. We'll be looking into it
-        though.
+        <strong>Will there be food / drinks?</strong> We're working on getting a
+        food & drink sponsor, so stay tuned!
       </p>
       <p>
-        <strong>Will there be prizes?</strong> We're working on getting some
-        swag produced, and possibly getting some neat raffle prizes worked out.
+        <strong>Will there be prizes?</strong> We're looking into it!
       </p>
       <p>
         <strong>Can I help? Or do you need sponsors?</strong> We're always open
