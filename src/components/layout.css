@@ -655,6 +655,12 @@ h5 {
 a {
   color: HSLA(323, 81%, 57%, 1);
 }
+a:hover {
+  color: HSLA(323, 81%, 57%, 1);
+  text-shadow: 1px 1px 2px purple, 0 0 1em HSLA(323, 81%, 57%, 1),
+    0 0 0.2em HSLA(323, 81%, 57%, 1);
+  transition: all 144ms ease-in;
+}
 
 p,
 ul {
