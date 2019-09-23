@@ -119,6 +119,11 @@ const RegistrationForm = () => {
         <sub>
           Registration helps us gauge interest. <br />
           Your information wont be used in any way.
+          <br />
+          By registering you agree to{" "}
+          <a href="https://denverdevs.org/resources/code-of-conduct/">
+            Denver Devs Code of Conduct
+          </a>
         </sub>
       </form>
     </RegistrationFormContainer>

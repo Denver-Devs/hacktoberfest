@@ -16,7 +16,7 @@ const IndexPage = () => (
       <ul>
         <li>[6pm] Brief intro to Hacktoberfest</li>
         <li>
-          [6:15~ 8:30pm] Hacking time! Submit PR's, help out your fellow devs,
+          [6:15 - 8:30pm] Hacking time! Submit PRs, help out your fellow devs,
           have fun!
         </li>
         <li>[8:30 - 9pm] Demos and show off time.</li>
