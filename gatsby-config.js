@@ -3,6 +3,9 @@ module.exports = {
     title: `Denver Devs Hacktoberfest Night - October 10th, 6pm - 9pm`,
     description: `It's Hacktoberfest 2019! Come celebrate open source with your fellow Denver Devs!`,
     author: `@denverdevs`,
+    url: `https://hacktoberfest.denverdevs.org`,
+    image: `/images/ogImage.png`,
+    siteUrl: `https://hacktoberfest.denverdevs.org`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
