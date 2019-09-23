@@ -69,9 +69,8 @@ const IndexPage = () => (
         though.
       </p>
       <p>
-        <strong>Will there be prizes?</strong> You'll get items for completing
-        the Hacktoberfest requirements. We might also have some neat swag items
-        & maybe do a raffle for some cool tech gear.
+        <strong>Will there be prizes?</strong> We're working on getting some
+        swag produced, and possibly getting some neat raffle prizes worked out.
       </p>
       <p>
         <strong>Can I help? Or do you need sponsors?</strong> We're always open
