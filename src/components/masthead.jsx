@@ -117,8 +117,8 @@ const HacktoberfestInfo = {
   description:
     "Its Hacktoberfest 2019! Come celebrate open source with your fellow Denver Devs!",
   location: "Flatiron School, 3601 Walnut St 5th Floor, Denver, CO 80205",
-  startTime: "2019-10-15T18:00:00-06:00",
-  endTime: "2019-10-15T21:00:00-06:00",
+  startTime: "2019-10-10T18:00:00-06:00",
+  endTime: "2019-10-10T21:00:00-06:00",
 }
 
 const Masthead = () => {
