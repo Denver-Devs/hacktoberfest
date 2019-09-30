@@ -5,7 +5,7 @@ const RegistrationFormContainer = styled.div`
   margin: 20px 0;
 
   @media (min-width: 768px) {
-    margin: 40px 0;
+    margin: 0 0 40px 0;
   }
 
   div {

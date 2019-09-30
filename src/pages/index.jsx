@@ -5,12 +5,15 @@ import SEO from "../components/seo"
 
 import Masthead from "../components/masthead"
 import RegistrationForm from "../components/registrationForm"
+import SponsorBlock from "../components/sponsors"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Masthead />
     <RegistrationForm />
+    <SponsorBlock />
+
     <div className="info">
       <h3>&#x2F;&#x2F; Agenda</h3>
       <ul>
@@ -63,8 +66,10 @@ const IndexPage = () => (
 
       <h3>&#x2F;&#x2F; Other Info</h3>
       <p>
-        <strong>Will there be food / drinks?</strong> We're working on getting a
-        food & drink sponsor, so stay tuned!
+        <strong>Will there be food / drinks?</strong> Thanks to the support of
+        sponsors we'll be able to have some food brought in. Registration is
+        important for how much we should order, so please register. Alcohol will
+        not be provided.
       </p>
       <p>
         <strong>Will there be prizes?</strong> We're looking into it!

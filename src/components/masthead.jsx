@@ -1,9 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 import AddToCalendar from "react-add-to-calendar"
-
 const MastheadSection = styled.section`
-  padding: 20px 0;
+  padding: 20px 0 0 0;
 
   h1 {
     background: linear-gradient(
