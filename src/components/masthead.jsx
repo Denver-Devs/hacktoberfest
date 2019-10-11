@@ -134,34 +134,13 @@ const Masthead = () => {
         Hacktoberfest Night
       </h1>
       <div className="masthead-info">
-        <div>October 10th, 6pm - 9pm</div>
-        <div>
-          <a
-            href="https://goo.gl/maps/9S4H3Rt7Q8c4yJoq9"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Flatiron school.
-          </a>
-          <div className="note">
-            - Take the elevator to 5th floor. <br />- You'll see a sign for
-            Denver Devs Hacktoberfest (and the Women Who Code JavaScript Meetup){" "}
-            <br />
-            - Follow the signs: right from the elevator, through a glass door,
-            take a right at the Women Who Code Sign (or stop in there!) and then
-            down the hallway you'll find us!
-            <br />
-            - If you get stuck hit us up on #hacktoberfest on Denver Devs or
-            @danhannigan on twitter.
-            <br />
-          </div>
-        </div>
+        <p>This event happened Oct 10th, 2019. </p>
+        <p>
+          Thanks to everyone that made it out! And to our sponsors. We had some
+          first time PR's get dropped in, which was great!{" "}
+        </p>
+        <p>Looking forward to next year.</p>
       </div>
-      <AddToCalendar
-        event={HacktoberfestInfo}
-        buttonLabel={"++ Add to calendar"}
-        listItems={[{ apple: "Apple Calendar" }, { google: "Google" }]}
-      />
     </MastheadSection>
   )
 }
