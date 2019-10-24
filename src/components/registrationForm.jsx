@@ -84,10 +84,12 @@ const RegistrationFormContainer = styled.div`
   }
 `
 
-const RegistrationForm = () => {
+const RegistrationForm = props => {
   return (
     <RegistrationFormContainer>
       <h3>&#x2F;&#x2F; Register</h3>
+      <br />
+      <h4>{props.userCount} are already registered and counting ...</h4>
       <form
         name="contact"
         method="post"

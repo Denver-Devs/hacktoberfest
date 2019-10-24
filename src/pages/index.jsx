@@ -1,17 +1,27 @@
-import React from "react"
-
+import React, { useEffect, useState } from "react"
+import { fetchUsers } from "../ClientApi"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
-
 import Masthead from "../components/masthead"
 import RegistrationForm from "../components/registrationForm"
+import SEO from "../components/seo"
 import SponsorBlock from "../components/sponsors"
-
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <Masthead />
-    <SponsorBlock />
+const IndexPage = () => {
+  const [no_of_users, setUserCount] = useState(0)
+  useEffect(() => {
+    fetchUsers()
+      .then(res => {
+        setUserCount(res.data.length)
+      })
+      .catch(err => {
+        console.log("ERROR", err)
+      })
+  })
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <Masthead />
+      <RegistrationForm userCount={no_of_users} />
+      <SponsorBlock />
 
     <div className="info">
       <h3>Notes for next time:</h3>
