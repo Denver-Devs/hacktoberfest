@@ -100,11 +100,17 @@ const RegistrationForm = props => {
         <input type="hidden" name="bot-field" />
         <input type="hidden" name="form-name" value="contact" />
         <div>
-          <input type="text" name="name" id="name" placeholder="//" />
+          <input type="text" name="name" id="name" placeholder="//" required />
           <label htmlFor="name">Name</label>
         </div>
         <div>
-          <input type="text" name="email" id="email" placeholder="//" />
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="//"
+            required
+          />
           <label htmlFor="email">Email</label>
         </div>
         <div>
@@ -114,7 +120,9 @@ const RegistrationForm = props => {
             id="slackHandle"
             placeholder="//"
           />
-          <label htmlFor="slackHandle">Slack Handle</label>
+          <label htmlFor="slackHandle" required>
+            Slack Username
+          </label>
         </div>
         <input type="submit" value="Register" className="special" />
         <br />
